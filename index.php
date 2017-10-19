@@ -6,7 +6,7 @@
 <body>
 привет
 <?php
-  require 'libs/Bootstrap.php';
+  require 'libs/bootstrap.php';
   $app = new Bootstrap();
 ?>
 </body>
