@@ -14,10 +14,13 @@
     }
     $controller = new $url[0];
     if(isset($url[2])) {
-     $controller->$url[1]($url[2]);
+  $url1=htmlspecialchars($url[1],ENT_QUOTES);
+  $url2=htmlspecialchars($url[2],ENT_QUOTES);
+     $controller->$url1($url2);
     } else {
      if(isset($url[1])) {
-      $controller->$url[1]();
+     	$url1=htmlspecialchars($url[1],ENT_QUOTES);
+      $controller->$url1();
      }
     }
    }
