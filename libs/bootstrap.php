@@ -6,7 +6,8 @@
     $url = rtrim($url, '/');
     $url = explode('/', $url);
     $file = 'controllers/'.$url[0].'.php';
-    if ($url[0]='index.php'){
+    $url0=htmlspecialchars($url[0],ENT_QUOTES);
+    if ($url0=='index.php'){
     	require 'controllers/index.php';
     	$controller= new Index();
     	return false;
