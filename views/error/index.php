@@ -1,4 +1,3 @@
-<?php
-require 'views/header.php';
-?>
-Это страница ошибки!
+<?php require 'views/header.php'; ?>
+<hr>
+<?php echo $this->msg; ?>
