@@ -1,4 +1,3 @@
 <?php require 'views/header.php'; ?>
-<hr>
-<?php echo $this->msg; ?>
+Логин
 <?php require 'views/footer.php'; ?>
