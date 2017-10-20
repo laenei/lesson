@@ -4,11 +4,12 @@
 <title></title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <body>
-привет
 <?php
   require 'libs/bootstrap.php';
-  require 'libs/view.php';
   require 'libs/controller.php';
+  require 'libs/model.php';
+  require 'libs/view.php';
+
   $app = new Bootstrap();
 ?>
 </body>
