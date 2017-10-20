@@ -1,5 +1,5 @@
 <?php
-  class Error {
+  class Erroronpage {
    public function __construct() {
     echo "Контроллер обработки ошибок";
    }

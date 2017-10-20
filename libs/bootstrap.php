@@ -10,7 +10,7 @@
     } else {
      require 'controllers/erka.php';
      #require 'controllers/error.php';
-     $controller = new Error();
+     $controller = new Erroronpage();
      return false;
     }
     $controller = new $url[0];
