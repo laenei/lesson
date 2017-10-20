@@ -1,3 +1,7 @@
 <?php
-echo 'Мы в erka';
+  class Error {
+   public function __construct() {
+    echo "Контроллер обработки ошибок";
+   }
+  }
 ?>
