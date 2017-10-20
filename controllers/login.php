@@ -9,5 +9,8 @@ class Login extends Controller {
         	#$model = new Login_Model();
         	$this->view->render('login/index');
         }
+    public function run(){
+    	$this->model->run();
+    }
 }
 ?>
