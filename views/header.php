@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <title>Test</title>
   <link rel="stylesheet" href="<?php echo URL;?>/public/css/default.css">
-  <script src="public/js/jquery.js"></script>
-  <script src="public/js/custom.js"></script>
+  <script src="<?php echo URL;?>/public/js/jquery.js"></script>
+  <script src="<?php echo URL;?>/public/js/custom.js"></script>
 </head>
 <body>
 <div id="header">

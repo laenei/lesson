@@ -4,8 +4,14 @@
         {
             parent::__construct();
             echo "Мы в конроллере INDEX!";
-            $this->view->render('index/index');
+            
 
+        }
+        public function Index (){
+        	 echo 'INSIDE INDEX INDEX';
+        }
+        public function Details (){
+        	$this->view->render('index/index');
         }
     }
 ?>

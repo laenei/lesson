@@ -10,6 +10,7 @@
     if ($url0=='index.php'){
     	require 'controllers/index.php';
     	$controller= new Index();
+    	$contoller->index();
     	return false;
     }
     if(file_exists($file)) {
@@ -21,15 +22,17 @@
      return false;
     }
     $controller = new $url[0];
+    
     if(isset($url[2])) {
+    	if(method_exists($controller, $url[1])){
   $url1=htmlspecialchars($url[1],ENT_QUOTES);
   $url2=htmlspecialchars($url[2],ENT_QUOTES);
-     $controller->$url1($url2);
+     $controller->$url1($url2);} else {echo 'Error';}
     } else {
      if(isset($url[1])) {
      	$url1=htmlspecialchars($url[1],ENT_QUOTES);
       $controller->$url1();
-     }
+     } else { $controller->index(); }
     }
    }
   }
