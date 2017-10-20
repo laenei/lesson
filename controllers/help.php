@@ -7,7 +7,7 @@ class Help extends Controller {
     public function other ($arg=false) {
         require 'models/help_model.php';
         $model=new Help_Model();
- 	echo "test";
+ 	
     }
 }
 ?>
