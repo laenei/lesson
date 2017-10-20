@@ -7,6 +7,7 @@
 привет
 <?php
   require 'libs/bootstrap.php';
+  require 'libs/view.php';
   require 'libs/controller.php';
   $app = new Bootstrap();
 ?>
