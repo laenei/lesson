@@ -1,7 +1,7 @@
 <?php
 class Login_Model extends Model{
-	public function test(){
-		
+	public function __construct(){
+		echo '111';
 	}
 }
 ?>
