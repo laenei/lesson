@@ -3,8 +3,11 @@
    public function __construct() {
     $url=isset($_GET['url']) ? $_GET['url'] : null;
     #$url = $_GET['url'];
+    echo $url;
     $url = rtrim($url, '/');
+    echo $url;
     $url = explode('/', $url);
+    echo $url[0];
     $file = 'controllers/'.$url[0].'.php';
     if (empty($url[0])){
     	require 'controllers/index.php';
