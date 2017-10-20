@@ -9,7 +9,7 @@
     $url = explode('/', $url);
     echo $url[0];
     $file = 'controllers/'.$url[0].'.php';
-    if (empty($url[0])){
+    if ($url[0]='index.php'){
     	require 'controllers/index.php';
     	$controller= new Index();
     	return false;
