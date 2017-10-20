@@ -4,9 +4,8 @@
         {
             parent::__construct();
             echo "Мы в конроллере INDEX!";
-            
-
-        }
+        
+       }
         public function Index (){
         	 echo 'INSIDE INDEX INDEX';
         }
