@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Test</title>
-  <link rel="stylesheet" href="public/css/default.css">
+  <link rel="stylesheet" href="<?php echo URL;?>/public/css/default.css">
   <script src="public/js/jquery.js"></script>
   <script src="public/js/custom.js"></script>
 </head>
