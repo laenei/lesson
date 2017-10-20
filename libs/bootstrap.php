@@ -21,7 +21,9 @@
      $controller = new Erroronpage();
      return false;
     }
+    
     $controller = new $url[0];
+    $controller->loadModel($url0);
     
     if(isset($url[2])) {
     	if(method_exists($controller, $url[1])){
