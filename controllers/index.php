@@ -4,6 +4,8 @@
         {
             parent::__construct();
             echo "Мы в конроллере INDEX!";
+            $this_>view->render(index/index);
+
         }
     }
 ?>
