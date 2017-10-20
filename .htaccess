@@ -1,0 +1,7 @@
+AddType application/x-httpd-php .html .php .txt
+#testaccesfile
+RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME}!-d
+#RewriteCond %{REQUEST_FILENAME}!-f
+#RewriteCond %{REQUEST_FILENAME}!-i
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]

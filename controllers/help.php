@@ -5,8 +5,9 @@ class Help extends Controller {
         echo "Мы в контроллее help";
     }
     public function other ($arg=false) {
-        requere 'models/help_model.php';
+        require 'models/help_model.php';
         $model=new Help_Model();
+ 	echo "test";
     }
 }
 ?>
