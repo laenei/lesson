@@ -8,6 +8,7 @@
     if(file_exists($file)) {
      require $file;
     } else {
+     require 'controllers/erka.php';
      require 'controllers/error.php';
      $controller = new Error();
      return false;
